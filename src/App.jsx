@@ -1,19 +1,20 @@
-
 import Header from './layouts/Header/Header';
-import Hero from './layouts/Hero/Hero';
 import Layout from './layouts/Layout/Layout';
-import Products from './layouts/Products/Products';
+import Footer from './layouts/Footer/Footer';
+import Routes from './routes/Routes';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Layout>
-        <Hero></Hero>
-
-        <Products></Products>
-      </Layout>
-    </>
+    <BrowserRouter>
+        <Header />
+      <main className="relative">
+        <Layout>
+          <Routes />
+        </Layout>
+        <Footer />
+      </main>
+    </BrowserRouter>
   );
 }
 

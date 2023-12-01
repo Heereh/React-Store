@@ -9,6 +9,7 @@ import { Button } from '@nextui-org/react';
 import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+
 const Card = (data) => {
   const [favColor, setFavColor] = useState('white');
 
@@ -39,11 +40,11 @@ const Card = (data) => {
           <Button size="sm">S</Button>
           <Button size="sm">M</Button>
           <Button size="sm">L</Button>
-          <Button size="sm">XL</Button>
+          <Button size="sm">XL</Button>v
         </div>
         <CardContainerBottom>
-          <span>{data.price}</span>
-          <Button>COMPRAR</Button>
+          <span>${data.price}</span>
+          <Button>Comprar</Button>
         </CardContainerBottom>
       </CardContentStyled>
     </CardContainerStyled>

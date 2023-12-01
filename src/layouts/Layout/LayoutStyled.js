@@ -11,4 +11,5 @@ export const LayoutWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 200px;
+  
 `;

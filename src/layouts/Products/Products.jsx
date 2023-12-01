@@ -4,7 +4,6 @@ import {
   SectionProductsStyled,
 } from './ProductsStyled';
 import Card from '../../components/UI/Card/Card';
-
 const Products = () => {
   return (
     <SectionProductsStyled>
@@ -19,7 +18,7 @@ const Products = () => {
               src={ProductData.src}
               name={ProductData.name}
               price={ProductData.price}
-            />
+            ></Card>
           );
         })}
       </ProductContainerStyled>

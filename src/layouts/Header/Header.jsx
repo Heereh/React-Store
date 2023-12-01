@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Navbar,
   NavbarBrand,
@@ -26,7 +27,7 @@ const Header = () => {
 
   return (
     <Navbar
-      className="dark text-foreground bg-background"
+      className="dark text-foreground bg-background "
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       isBlurred={false}
@@ -42,27 +43,27 @@ const Header = () => {
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Features
+            <Link color="foreground" href="/">
+              Home
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page">
-              Customers
+            <Link href="/products" aria-current="page">
+              Productos
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Integrations
+            <Link color="foreground" href="/contact">
+              Contacto
             </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#">Login</Link>
+            <Link href="/Login">Login</Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
+            <Button as={Link} color="primary" href="/register" variant="flat">
               Sign Up
             </Button>
           </NavbarItem>
