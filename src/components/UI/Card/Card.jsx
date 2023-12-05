@@ -4,11 +4,11 @@ import {
   CardImageContainerStyled,
   CardContentStyled,
   CardContainerBottom,
+  LinkItem,
 } from './CardStyled';
 import { Button } from '@nextui-org/react';
 import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
 
 const Card = (data) => {
   const [favColor, setFavColor] = useState('white');
@@ -44,7 +44,8 @@ const Card = (data) => {
         </div>
         <CardContainerBottom>
           <span>${data.price}</span>
-          <Button>Comprar</Button>
+          <LinkItem to={`/products/${data.name}`}>Ver más</LinkItem>
+          {/* <Botton to={data.name}>a</Botton> */}
         </CardContainerBottom>
       </CardContentStyled>
     </CardContainerStyled>

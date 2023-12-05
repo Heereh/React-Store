@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 export const CardContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -52,5 +52,17 @@ export const CardContainerBottom = styled.div`
     line-height: 2.2rem;
     padding-bottom: 10px;
     color: green;
+  }
+`;
+export const LinkItem = styled(Link)`
+  color: #3da9fc;
+  border: 1px solid #3da9fc;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+
+  :hover {
+    background: #3da9fc;
+    color: fff;
   }
 `;

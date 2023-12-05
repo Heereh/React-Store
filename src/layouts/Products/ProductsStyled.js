@@ -24,3 +24,23 @@ export const ProductContainerStyled = styled.div`
   width: 100%;
   padding-top: 100px;
 `;
+
+
+
+export const AllProductWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  /* justify-content: center;
+  align-items: center; */
+`;
+
+export const BtnContainerStyled = styled.div`
+  color: fff;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+`;
