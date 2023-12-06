@@ -2,19 +2,18 @@ import Header from './layouts/Header/Header';
 import Layout from './layouts/Layout/Layout';
 import Footer from './layouts/Footer/Footer';
 import Routes from './routes/Routes';
-import { BrowserRouter } from 'react-router-dom';
+
+//import { AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
-    <BrowserRouter>
-        <Header />
-      <main className="relative">
-        <Layout>
-          <Routes />
-        </Layout>
-        <Footer />
-      </main>
-    </BrowserRouter>
+    <>
+      <Header />
+      <Layout>
+        <Routes />
+      </Layout>
+      <Footer />
+    </>
   );
 }
 
