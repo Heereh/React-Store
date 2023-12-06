@@ -1,7 +1,9 @@
-const UserProfiler = () => {
-  return (
-    <div>UserProfiler</div>
-  )
-}
+import { useParams } from 'react-router-dom';
 
-export default UserProfiler
+const UserProfiler = () => {
+  const { username } = useParams();
+
+  return <div>Biervenido de vuelta {username}</div>;
+};
+
+export default UserProfiler;

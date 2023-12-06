@@ -1,4 +1,4 @@
-import React from 'react';
+import { useContext, useState } from 'react';
 
 import {
   Navbar,
@@ -11,8 +11,14 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from '@nextui-org/react';
+import AuthContext from '../../context/AuthContext';
+import { NavLinkStyled } from './HeaderStyled';
+
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { isAuth, user, handleLogout } = useContext(AuthContext);
+
   const menuItems = [
     'Dashboard',
     'Activity',
@@ -60,13 +66,33 @@ const Header = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="/Login">Login</Link>
+            <NavLinkStyled to={isAuth ? `/user/${user}` : '/login'}>
+              {isAuth ? 'Perfil' : 'Login'}
+            </NavLinkStyled>
           </NavbarItem>
-          <NavbarItem>
-            <Button as={Link} color="primary" href="/register" variant="flat">
-              Sign Up
-            </Button>
-          </NavbarItem>
+          <NavLinkStyled>
+            {isAuth ? (
+              <Button
+                as={Link}
+                className="bg-red-700"
+                onClick={() => {
+                  handleLogout();
+                }}
+              >
+                Cerrar Sesión
+              </Button>
+            ) : (
+              <Button
+                as={Link}
+                href="/register"
+                className=""
+                color="primary"
+                variant="flat"
+              >
+                Registrate
+              </Button>
+            )}
+          </NavLinkStyled>
         </NavbarContent>
         <NavbarMenu>
           {menuItems.map((item, index) => (
