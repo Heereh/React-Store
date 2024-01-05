@@ -7,6 +7,7 @@ export const CorouselStyled = styled.div`
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	margin: 0 20px;
 `;
 
 export const ImageContainerStyled = styled.img`
@@ -37,10 +38,10 @@ export const ArrowStyled = styled.button`
 		props.right === true
 			? css`
 					right: 1rem;
-				`
+			  `
 			: css`
 					left: 1rem;
-				`}
+			  `}
 `;
 
 export const IndicatorStyled = styled.span`
@@ -63,8 +64,8 @@ export const ButtonIStyled = styled.button`
 		props.active === true
 			? css`
 					background-color: white;
-				`
+			  `
 			: css`
 					background-color: grey;
-				`}
+			  `}
 `;
