@@ -1,47 +1,51 @@
-import { useContext, useEffect } from 'react';
-import { FormStyled, InputContainerStyled } from './LoginStyled';
-import { Button } from '@nextui-org/react';
+import { FormStyled } from './LoginStyled';
+import LoginInput from '../../components/UI/Input/LoginInput';
+import Submit from '../../components/UI/Submit/Submit';
 
-import AuthContext from '../../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { Formik } from 'formik';
+import { loginInitialValues } from '../../formik/InitialValues';
+import { loginValidationSchema } from '../../formik/ValidationSchema';
+
+import { setCurrentUser } from '../../redux/user/userslice';
+import { useDispatch } from 'react-redux';
+
+import useRedirect from '../../hooks/useRedirect';
+import { loginUser } from '../../axios/axios-user';
 
 const Login = () => {
-  const { handleChange, handleSubmit, form, isAuth } = useContext(AuthContext);
-  const navigate = useNavigate()
-  useEffect(() => {
-    if(isAuth){
-      navigate('/')
-    }
-  },[isAuth, navigate])
-  return (
-    <FormStyled>
-      <h2>Login</h2>
-      <InputContainerStyled>
-        <label htmlFor="username">Username</label>
-        <input
-          type="text"
-          placeholder=""
-          id="username"
-          name="username"
-          onChange={handleChange}
-          value={form.username}
-        />
-      </InputContainerStyled>
-      <InputContainerStyled>
-        <label>Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={form.password}
-          onChange={handleChange}
-        />
-      </InputContainerStyled>
-      <Button variant="ghost" color="primary" onClick={handleSubmit}>
-        Login
-      </Button>
-    </FormStyled>
-  );
+	const dispatch = useDispatch();
+	useRedirect('/');
+
+	return (
+		<Formik
+			initialValues={loginInitialValues}
+			validationSchema={loginValidationSchema}
+			onSubmit={async (values) => {
+				const user = await loginUser(values.email, values.password);
+				if (user) {
+					dispatch(
+						setCurrentUser({
+							...user.usuario,
+							token: user.token,
+						}),
+					);
+				}
+			}}>
+			<FormStyled>
+				<LoginInput
+					name="email"
+					type="text"
+					placeholder="email"
+				/>
+				<LoginInput
+					name="password"
+					type="password"
+					placeholder="Password"
+				/>
+				<Submit type="button">Enviar</Submit>
+			</FormStyled>
+		</Formik>
+	);
 };
 
 export default Login;
