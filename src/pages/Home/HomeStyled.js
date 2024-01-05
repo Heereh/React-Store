@@ -1,6 +1,3 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const HomeContainerStyled = styled.section`
-
-
-`
+export const HomeContainerStyled = styled.section``;
