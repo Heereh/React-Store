@@ -1,20 +1,14 @@
-import Header from './layouts/Header/Header';
-import Layout from './layouts/Layout/Layout';
-import Footer from './layouts/Footer/Footer';
+import Layout from './components/Layout/Layout';
 import Routes from './routes/Routes';
-
-//import { AuthProvider } from './context/AuthContext';
+import { GlobalStyled } from './styles/GlobalStyles';
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Layout>
-        <Routes />
-      </Layout>
-      <Footer />
-    </>
-  );
+	return (
+		<Layout>
+			<GlobalStyled></GlobalStyled>
+			<Routes />
+		</Layout>
+	);
 }
 
 export default App;
