@@ -7,11 +7,12 @@ export const SectionProductsStyled = styled.section`
 	align-items: center;
 	width: 100%;
 	height: auto;
-
+	padding-top: 100px;
 	& h1 {
 		font-size: 2rem;
 		letter-spacing: 2px;
 		background-color: none;
+		text-align: center;
 	}
 `;
 
