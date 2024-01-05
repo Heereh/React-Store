@@ -31,7 +31,7 @@ export const removeItemFromCart = (cartItems, id) => {
 			return item.id === productToRemove.id
 				? {
 						...item,
-						quantity: item.quantity - item.quantity,
+						quantity: item.quantity - 1,
 					}
 				: item;
 		});
