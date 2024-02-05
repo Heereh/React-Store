@@ -38,7 +38,6 @@ const Register = () => {
 					actions.resetForm();
 				}}>
 				<FormStyled>
-					<h2>Crea tu cuenta</h2>
 					<LoginInput
 						name="name"
 						type="text"
@@ -54,9 +53,6 @@ const Register = () => {
 						type="password"
 						placeholder="Password"
 					/>
-					<a href="/login">
-						<p>Ya tienes cuenta? Inicia Sesión</p>
-					</a>
 					<Submit>Registrate</Submit>
 				</FormStyled>
 			</Formik>

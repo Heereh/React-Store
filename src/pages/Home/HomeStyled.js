@@ -1,5 +1,3 @@
 import styled from 'styled-components';
 
-export const HomeContainerStyled = styled.section`
-	width: 100%;
-`;
+export const HomeContainerStyled = styled.section``;
