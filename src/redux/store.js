@@ -5,10 +5,15 @@ import storage from 'redux-persist/lib/storage';
 import cartReducer from './cart/cartSlice';
 import userReducer from './user/userslice';
 import productsReducer from './products/productsSLice';
+import recommendedReducer from './recommended/RecommendedSlice';
+import categoriesReducer from './categories/categoriesSlice';
+
 const reducers = combineReducers({
 	user: userReducer,
 	products: productsReducer,
 	cart: cartReducer,
+	recommended: recommendedReducer,
+	categories: categoriesReducer,
 });
 
 const persistConfig = {

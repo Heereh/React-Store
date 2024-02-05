@@ -5,6 +5,7 @@ import {
 	CardContentStyled,
 	CardContainerBottom,
 	LinkItem,
+	Pruebas,
 } from './CardStyled';
 import { Button } from '@nextui-org/react';
 import Botton from '../Botton/Botton';
@@ -43,13 +44,10 @@ const Card = ({ name, id, src, price }) => {
 			</CardImageContainerStyled>
 
 			<CardContentStyled>
-				<h2 className="w-full text-center">{name}</h2>
-				<div className="flex gap-1 justify-center items-center w-full ">
-					<Button size="sm">S</Button>
-					<Button size="sm">M</Button>
-					<Button size="sm">L</Button>
-					<Button size="sm">XL</Button>
-				</div>
+				<Pruebas>
+					<h2 className="w-full text-center">{name}</h2>
+				</Pruebas>
+
 				<CardContainerBottom>
 					<span>${price}</span>
 					<ul>

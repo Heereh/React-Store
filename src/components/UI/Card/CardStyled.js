@@ -5,15 +5,15 @@ export const CardContainerStyled = styled.div`
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-
-	width: 350px;
+	margin: 10px 0;
+	width: 300px;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px 0px;
 `;
 
 export const CardImageContainerStyled = styled.div`
 	height: 200px;
-	width: 100%;
+	width: 200px;
 	object-fit: cover;
 	& img {
 		width: 100%;
@@ -35,10 +35,16 @@ export const CardContentStyled = styled.div`
 	position: relative;
 
 	& h2 {
-		font-size: 1.7rem;
+		font-size: 1.2rem;
 		text-transform: uppercase;
 	}
 `;
+
+export const Pruebas = styled.div`
+	width: 100%;
+	height: 82px;
+`;
+
 export const CardContainerBottom = styled.div`
 	display: flex;
 	width: 100%;
@@ -56,6 +62,7 @@ export const CardContainerBottom = styled.div`
 	& ul {
 		display: flex;
 		width: 100%;
+		align-items: center;
 		justify-content: space-between;
 	}
 `;
@@ -63,6 +70,7 @@ export const LinkItem = styled(Link)`
 	color: #3da9fc;
 	border: 1px solid #3da9fc;
 	border-radius: 20px;
+	height: 40px;
 	padding: 5px 15px;
 	transition: all 0.3s ease;
 

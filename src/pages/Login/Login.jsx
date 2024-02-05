@@ -32,10 +32,11 @@ const Login = () => {
 				}
 			}}>
 			<FormStyled>
+				<h2>Iniciar Sesión</h2>
 				<LoginInput
 					name="email"
-					type="text"
-					placeholder="email"
+					type="emaiil"
+					placeholder="Email"
 				/>
 				<LoginInput
 					name="password"
