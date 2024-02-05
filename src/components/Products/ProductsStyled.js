@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const SectionProductsStyled = styled.section`
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: auto;
 	padding-top: 100px;
-	position: relative;
 	& h1 {
 		font-size: 2rem;
 		letter-spacing: 2px;
@@ -22,6 +23,7 @@ export const ProductContainerStyled = styled.div`
 	flex-wrap: wrap;
 	gap: 15px;
 	width: 100%;
+	padding-top: 100px;
 `;
 
 export const AllProductWrapper = styled.section`
@@ -40,19 +42,4 @@ export const BtnContainerStyled = styled.div`
 	justify-content: center;
 	gap: 1rem;
 	flex-wrap: wrap;
-	padding: 65px;
-	gap: 50px;
-`;
-
-export const FilterContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	width: 250px;
-	height: 500px;
-	padding: 20px;
-	gap: 30px;
-	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
