@@ -1,1 +1,1 @@
-export const INITIAL_LIMIT = 9;
+export const INITIAL_LIMIT = 6;

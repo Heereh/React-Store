@@ -1,12 +1,16 @@
 import { HomeContainerStyled } from './HomeStyled';
 import Hero from '../../components/Hero/Hero';
-import Products from '../../components/Products/Products';
+import { CardRecommended } from '../../components/Recommended/CardRecommended';
+import Subscribe from '../../components/Subscribe/Subscribe';
+import { Opcion } from '../../components/Opcion/Opcion';
 
 const Home = () => {
 	return (
 		<HomeContainerStyled>
 			<Hero />
-			<Products />
+			<Opcion></Opcion>
+			<CardRecommended></CardRecommended>
+			<Subscribe />
 		</HomeContainerStyled>
 	);
 };
