@@ -17,7 +17,7 @@ const Hero = () => {
 				<HeroTextContainer>
 					<HeroImg>
 						<p>Nuevos</p>
-						<img src="../../../public/hand_icon.png" />
+						<img src='../../../public/hand_icon.png' />
 					</HeroImg>
 					<p>Productos</p>
 					<p>Para todos</p>
@@ -31,7 +31,7 @@ const Hero = () => {
 			</HeroLeftStyled>
 			<HeroRight>
 				<img
-					src="../../../public/hero_image.png"
+					src='../../../public/hero_image.png'
 					alt=""
 				/>
 			</HeroRight>
