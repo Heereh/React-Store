@@ -7,12 +7,10 @@ export const FormStyled = styled(FormikForm)`
 	justify-content: center;
 	align-items: center;
 	background: black;
-	border: 1px solid gray;
 	padding: 20px;
 	gap: 20px;
 	border-radius: 10px;
-	min-width: 380px;
-	max-width: 420px;
+	max-width: 500px;
 	width: 100%;
 	cursor: default;
 
@@ -24,17 +22,9 @@ export const FormStyled = styled(FormikForm)`
 	}
 
 	& Button {
-		font-size: 1.2rem;
-		font-weight: 500;
-		padding: 10px;
+		font-size: 1.6rem;
+		padding: 25px;
 		margin: 0 0 20px 0;
-		border: 2px solid white;
-		background-color: white;
-		color: #171716;
-	}
-
-	& a p {
-		color: var(--skyblue-txt);
 	}
 `;
 

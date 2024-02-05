@@ -20,13 +20,10 @@ import { IoCartOutline } from 'react-icons/io5';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCurrentUser } from '../../redux/user/userslice';
-import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
 	const { currentUser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
-	const navigate = useNavigate();
-
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
@@ -43,30 +40,14 @@ const Header = () => {
 						className="sm:hidden"
 						aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
 					/>
-					<a href="/">
-						<p className="font-bold text-inherit">LOOKSTORE</p>
-					</a>
-
+					<p className="font-bold text-inherit">TESTING</p>
 					<NavbarMenu>
 						<NavbarMenuItem>
 							<Link
 								color="primary"
 								className="w-full"
-								onClick={() => {
-									navigate('/');
-								}}
+								href="#"
 								size="lg">
-								Home
-							</Link>
-						</NavbarMenuItem>
-						<NavbarMenuItem>
-							<Link
-								color="primary"
-								className="w-full"
-								size="lg"
-								onClick={() => {
-									navigate('products');
-								}}>
 								Productos
 							</Link>
 						</NavbarMenuItem>
@@ -74,12 +55,18 @@ const Header = () => {
 							<Link
 								color="primary"
 								className="w-full"
-								onClick={() => {
-									navigate('contact');
-								}}
-								href="FooterContainerStyled"
+								href="#"
 								size="lg">
-								Contacto
+								Productos
+							</Link>
+						</NavbarMenuItem>
+						<NavbarMenuItem>
+							<Link
+								color="primary"
+								className="w-full"
+								href="#"
+								size="lg">
+								Productos
 							</Link>
 						</NavbarMenuItem>
 					</NavbarMenu>
