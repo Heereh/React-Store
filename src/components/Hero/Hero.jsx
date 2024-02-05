@@ -1,4 +1,3 @@
-import { Button } from '@nextui-org/react';
 import {
 	HeroButtonStyled,
 	HeroContainer,
@@ -18,7 +17,7 @@ const Hero = () => {
 				<HeroTextContainer>
 					<HeroImg>
 						<p>Nuevos</p>
-						<img src="../src/assets/img/hand_icon.png" />
+						<img src={"../src/assets/img/hand_icon.png"} />
 					</HeroImg>
 					<p>Productos</p>
 					<p>Para todos</p>
@@ -32,7 +31,7 @@ const Hero = () => {
 			</HeroLeftStyled>
 			<HeroRight>
 				<img
-					src="../src/assets/img/hero_image.png"
+					src={"../src/assets/img/hero_image.png"}
 					alt=""
 				/>
 			</HeroRight>
