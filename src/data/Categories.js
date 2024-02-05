@@ -1,26 +1,27 @@
 export const Categories = [
 	{
 		id: 1,
-		img: '',
 		title: 'Musculosas',
-		categoty: 'Musculosas',
+		category: 'Musculosas',
 	},
 	{
 		id: 2,
-		img: '',
 		title: 'Remeras',
-		categoty: 'Remeras',
+		category: 'Remeras',
 	},
 	{
 		id: 3,
-		img: '',
 		title: 'Short',
-		categoty: 'Short',
+		category: 'Short',
 	},
 	{
 		id: 4,
-		img: '',
 		title: 'Pantalones',
-		categoty: 'Pantalones',
+		category: 'Pantalones',
+	},
+	{
+		id: 5,
+		title: 'Accesorios',
+		category: 'Accesorios',
 	},
 ];

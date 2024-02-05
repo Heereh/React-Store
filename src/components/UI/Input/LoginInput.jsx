@@ -16,6 +16,7 @@ const LoginInput = ({ type, placeholder, name }) => {
 						placeholder={placeholder}
 						{...field}
 						iserror={errors[field.name] && touched[field.name]}
+						
 					/>
 
 					<ErrorMessage name={field.name}>

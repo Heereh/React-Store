@@ -1,8 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {
-	Routes as ReactDomRoutes,
-	Route,
-} from 'react-router-dom';
+import { Routes as ReactDomRoutes, Route } from 'react-router-dom';
 
 import Home from '../pages/Home/Home';
 import Products from '../components/Products/Products';
@@ -26,7 +23,7 @@ const Routes = () => {
 			<Route path="products">
 				<Route
 					index
-					element={<Products isEnabled={true} />}
+					element={<Products  />}
 				/>
 				<Route
 					path=":product"
