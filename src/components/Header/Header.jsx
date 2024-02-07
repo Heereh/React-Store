@@ -3,7 +3,7 @@ import {
 	NavbarBrand,
 	NavbarContent,
 	NavbarItem,
-	Link,
+	Link as LinkNextUi,
 	Button,
 	DropdownItem,
 	DropdownTrigger,
@@ -20,12 +20,12 @@ import { IoCartOutline } from 'react-icons/io5';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCurrentUser } from '../../redux/user/userslice';
-import { useNavigate } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 const Header = () => {
 	const { currentUser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
-	const navigate = useNavigate();
+	
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -43,44 +43,37 @@ const Header = () => {
 						className="sm:hidden"
 						aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
 					/>
-					<a href="/">
-						<p className="font-bold text-inherit">LOOKSTORE</p>
-					</a>
+					<NavLinkStyled
+						to="/"
+						title={true}>
+						<p title className="font-bold text-inherit">LOOKSTORE</p>
+					</NavLinkStyled>
 
 					<NavbarMenu>
 						<NavbarMenuItem>
-							<Link
+							<LinkNextUi
 								color="primary"
 								className="w-full"
-								onClick={() => {
-									navigate('/');
-								}}
 								size="lg">
 								Home
-							</Link>
+							</LinkNextUi>
 						</NavbarMenuItem>
 						<NavbarMenuItem>
-							<Link
+							<LinkNextUi
 								color="primary"
 								className="w-full"
-								size="lg"
-								onClick={() => {
-									navigate('products');
-								}}>
+								size="lg">
 								Productos
-							</Link>
+							</LinkNextUi>
 						</NavbarMenuItem>
 						<NavbarMenuItem>
-							<Link
+							<NavLinkStyled
 								color="primary"
 								className="w-full"
-								onClick={() => {
-									navigate('contact');
-								}}
-								href="FooterContainerStyled"
+								to="/contact"
 								size="lg">
 								Contacto
-							</Link>
+							</NavLinkStyled>
 						</NavbarMenuItem>
 					</NavbarMenu>
 				</NavbarBrand>
@@ -88,25 +81,25 @@ const Header = () => {
 					className="hidden sm:flex gap-4"
 					justify="center">
 					<NavbarItem>
-						<Link
+						<NavLinkStyled
 							color="foreground"
-							href="/">
+							to="/">
 							Home
-						</Link>
+						</NavLinkStyled>
 					</NavbarItem>
 					<NavbarItem isActive>
-						<Link
-							href="/products"
+						<NavLinkStyled
+							to="products"
 							aria-current="page">
 							Productos
-						</Link>
+						</NavLinkStyled>
 					</NavbarItem>
 					<NavbarItem>
-						<Link
+						<NavLinkStyled
 							color="foreground"
-							href="/contact">
+							to="contact">
 							Contacto
-						</Link>
+						</NavLinkStyled>
 					</NavbarItem>
 				</NavbarContent>
 				<NavbarContent justify="end">
@@ -185,7 +178,7 @@ const Header = () => {
 							className="ButtonActive"
 							color="primary"
 							variant="flat"
-							href={
+							to={
 								currentUser
 									? `${`/user${currentUser.nombre}`}`
 									: `${'/register'}`

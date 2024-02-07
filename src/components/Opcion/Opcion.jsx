@@ -12,8 +12,8 @@ export const Opcion = () => {
 				<MdOutlineSecurity />
 				<h2>Seguridad, confía en nosotros</h2>
 				<p>
-					Tuviste inconvenientes? Devuelvelo! siempre buscare la
-					manera mas facil de solucionar tus problemas!
+					Tuviste inconvenientes? Devuelvelo! siempre buscare la manera mas
+					facil de solucionar tus problemas!
 				</p>
 				<span>Conoce más de nuestra seguridad</span>
 			</OpcionBox>
@@ -29,10 +29,10 @@ export const Opcion = () => {
 			<OpcionBox>
 				<MdMailOutline />
 				<h2>Envíos a todo el país</h2>
-				 <p>
+				<p>
 					Seleccioná tu método de envío y recibí tu pedido en cualquier punto
 					del país
-				</p> 
+				</p>
 				<span>Más sobre este beneficio</span>
 			</OpcionBox>
 		</OpcionSection>

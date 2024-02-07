@@ -42,7 +42,7 @@ const Footer = () => {
 				</FooterColumnTwo>
 
 				<FooterColumnThree>
-					<h2>SOBRE NOSOTROS</h2>
+					<h2>Sobre Nosotros</h2>
 					<ul>
 						<li>Nuestros producos</li>
 						<li>FAQ</li>

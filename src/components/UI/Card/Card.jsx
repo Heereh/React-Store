@@ -16,10 +16,10 @@ import { addToCart } from '../../../redux/cart/cartSlice';
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ name, id, src, price }) => {
-	const [favColor, setFavColor] = useState('white');
+	const [favColor, setFavColor] = useState(`#ababab`);
 
 	const onFavButtonClick = () => {
-		const changeColorSVG = favColor === 'white' ? 'yellow' : 'white';
+		const changeColorSVG = favColor === `#ababab` ? 'yellow' : `#ababab`;
 		setFavColor(changeColorSVG);
 	};
 

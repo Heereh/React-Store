@@ -3,6 +3,7 @@ import {
 	SectionProductsStyled,
 	FilterContainer,
 	BtnContainerStyled,
+	Prueba,
 } from './ProductsStyled';
 import Card from '../UI/Card/Card';
 import { Button, Radio, RadioGroup } from '@nextui-org/react';
@@ -62,19 +63,21 @@ const Products = () => {
 				</div> */}
 			</FilterContainer>
 			<ProductContainerStyled>
-				{Object.values(products).map((clothes) => {
-					return clothes.map((clothe) => {
-						if (limit >= clothe.id || selectedCategory) {
-							return (
-								<Card
-									{...clothe}
-									key={clothe.id}
-								/>
-							);
-						}
-						return null;
-					});
-				})}
+				<Prueba>
+					{Object.values(products).map((clothes) => {
+						return clothes.map((clothe) => {
+							if (limit >= clothe.id || selectedCategory) {
+								return (
+									<Card
+										{...clothe}
+										key={clothe.id}
+									/>
+								);
+							}
+							return null;
+						});
+					})}
+				</Prueba>
 
 				{!selectedCategory && (
 					<BtnContainerStyled>

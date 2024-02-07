@@ -52,6 +52,7 @@ export const products = [
 		id: 8,
 		name: 'Short Ciclista con calza',
 		src: 'https://http2.mlstatic.com/D_NQ_NP_857266-MLA54101839598_032023-O.webp',
+		price: 22500,
 		category: 'Short',
 	},
 	{
@@ -65,18 +66,21 @@ export const products = [
 		id: 10,
 		name: 'Musculosa',
 		src: 'https://http2.mlstatic.com/D_NQ_NP_774113-MLA52647218538_112022-O.webp',
+		price: 18000,
 		category: 'Musculosas',
 	},
 	{
 		id: 11,
 		name: 'Remera deportiva reflectivo',
 		src: 'https://http2.mlstatic.com/D_NQ_NP_889013-MLA72103706718_102023-O.webp',
+		price: 19000,
 		category: 'Remeras',
 	},
 	{
 		id: 12,
 		name: 'Remera compresora Yakka',
 		src: 'https://http2.mlstatic.com/D_NQ_NP_947947-MLA71923562760_092023-O.webp',
+		price:18450,
 		category: 'Remeras',
 	},
 	{

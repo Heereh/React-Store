@@ -5,9 +5,11 @@ export const NavLinkStyled = styled(NavLink)`
 	color: white;
 	width: 45px;
 	height: 25px;
+
 	&.active {
-		color: steelblue;
+		color: ${(props) => (props.title ? 'white' : 'steelblue')};
 	}
+
 	& svg {
 		width: 100%;
 		height: 100%;

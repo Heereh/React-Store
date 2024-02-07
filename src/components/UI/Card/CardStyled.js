@@ -6,7 +6,8 @@ export const CardContainerStyled = styled.div`
 	align-items: center;
 	position: relative;
 	margin: 10px 0;
-	width: 300px;
+
+	max-width: 250px;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px 0px;
 `;
@@ -37,6 +38,9 @@ export const CardContentStyled = styled.div`
 	& h2 {
 		font-size: 1.2rem;
 		text-transform: uppercase;
+		@media (max-width: 1150) {
+			font-size: 1px;
+		}
 	}
 `;
 
@@ -70,7 +74,6 @@ export const LinkItem = styled(Link)`
 	color: #3da9fc;
 	border: 1px solid #3da9fc;
 	border-radius: 20px;
-	height: 40px;
 	padding: 5px 15px;
 	transition: all 0.3s ease;
 

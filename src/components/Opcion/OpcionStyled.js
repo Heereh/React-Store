@@ -6,10 +6,18 @@ export const OpcionSection = styled.section`
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 200px;
+
+	@media screen and (max-width: 852px) {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 40px;
+	}
+
+
 `;
 
 export const OpcionBox = styled.div`
-	width: 27%;
+	max-width: 378px;
 	padding: 10px;
 	height: 300px;
 	display: flex;
@@ -17,6 +25,7 @@ export const OpcionBox = styled.div`
 	align-items: center;
 	text-align: center;
 	gap: 10px;
+
 	& svg {
 		width: 100px;
 		height: 100px;
@@ -35,8 +44,14 @@ export const OpcionBox = styled.div`
 	}
 
 	& span {
-		font-size: 1rem;
+		font-size: 0.95rem;
+		font-family: var(--font-Karla);
+		font-weight: 600;
 		color: #7396ec;
 		cursor: pointer;
+	}
+
+	@media screen and (max-width: 852px) {
+		flex-wrap: nowrap;
 	}
 `;
