@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { createOrder } from '../../../axios/axios-orders';
 import { clearOrders } from '../../../redux/orders/orderSlice';
 import Loader from '../../UI/Loading/Loading';
-
+import { Button } from '@nextui-org/react';
 
 const FormCheck = ({ cartItems, ShippingCost, price }) => {
 	const dispatch = useDispatch();
@@ -72,9 +72,13 @@ const FormCheck = ({ cartItems, ShippingCost, price }) => {
 							Dirección
 						</Input>
 						<div>
-							<Submit disabled={!cartItems.length || isSubmitting}>
-								{isSubmitting ? <Loader /> : 'Iniciando tu pedido'}
-							</Submit>
+							<Button
+								disabled={!cartItems.length || isSubmitting}
+								color="primary"
+								type="submit"
+								>
+								{isSubmitting ? 'Iniciando tu pedido' : 'Iniciando tu pedido'}
+							</Button>
 						</div>
 					</Form>
 				)}
