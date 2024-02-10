@@ -5,15 +5,13 @@ export const OpcionSection = styled.section`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 200px;
+	margin: 200px 0;
 
 	@media screen and (max-width: 852px) {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 40px;
 	}
-
-
 `;
 
 export const OpcionBox = styled.div`

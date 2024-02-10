@@ -72,9 +72,13 @@ a:visited{
   font-family: var(--font-Josefin);
 } 
 
+
  p, ul,li{
   font-family: var(--font-Karla);
 } 
 
-
+footer{
+  //position: absolute;
+  bottom: 0;
+}
 `;

@@ -7,7 +7,7 @@ export const CardsContainer = styled.section`
 	padding: 1rem;
 	margin: 0 auto;
 	max-width: 1250px;
-	padding-top: 150px;
+	padding-bottom: 200px;
 
 	& h2 {
 		font-size: 1.4rem;

@@ -6,8 +6,8 @@ export const SubscribeContainer = styled.section`
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 120px 0;
 	gap: 40px;
+	padding-bottom: 200px;
 	& h2 {
 		font-size: 2rem;
 		font-weight: 600;

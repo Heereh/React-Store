@@ -8,7 +8,7 @@ export const CartContainerStyled = styled.div`
 	width: 100%;
 	height: auto;
 	gap: 20px;
-	margin: 20px 30px;
+	margin: 20px 30px 300px 30px;
 
 	& h2 {
 	}
@@ -19,8 +19,7 @@ export const CardWrapperStyled = styled.div`
 	flex-direction: column;
 	width: 67%;
 	border-radius: 6px;
-	box-shadow:
-		rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
 		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 `;
 
@@ -116,13 +115,13 @@ export const ButtonCartStyled = styled.button`
 	height: 36px;
 	border: none;
 	border-radius: 50%;
-	background-color: #fff;
+	background-color: transparent;
 	color: ${(props) => (props.disabled === true ? 'white' : 'steelblue')};
 	${(props) =>
 		props.disabled === true
 			? css`
 					cursor: not-allowed;
-				`
+			  `
 			: ''}
 	& svg {
 		width: 100%;
@@ -132,11 +131,11 @@ export const ButtonCartStyled = styled.button`
 
 export const CartTotalStyled = styled.div`
 	display: flex;
-	width: 50px;
+	width: 25px;
 	font-size: 1rem;
 	border-radius: unset;
 	box-shadow: none;
-	background-color: #fff;
+	background-color: transparent;
 
 	& input {
 		display: flex;
@@ -151,8 +150,7 @@ export const TotalContainerStyled = styled.div`
 	justify-content: center;
 	align-items: start;
 	width: 300px;
-	box-shadow:
-		rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	& h2 {
 		font-size: 1.5rem;

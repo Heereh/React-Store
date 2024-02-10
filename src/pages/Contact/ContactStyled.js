@@ -6,6 +6,7 @@ import { FormStyled } from '../Login/LoginStyled';
 export const FormContact = styled(FormStyled)`
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	background: white;
+	margin: 80px 0 200px 0;
 	& h2 {
 		color: #17171c;
 	}

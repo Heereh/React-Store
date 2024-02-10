@@ -1,6 +1,5 @@
 import { FormStyled } from './LoginStyled';
 import Input from '../../components/UI/Input/Input';
-import Submit from '../../components/UI/Submit/Submit';
 
 import { Formik } from 'formik';
 import { loginInitialValues } from '../../formik/InitialValues';
@@ -11,6 +10,7 @@ import { useDispatch } from 'react-redux';
 
 import useRedirect from '../../hooks/useRedirect';
 import { loginUser } from '../../axios/axios-user';
+import { Button } from '@nextui-org/react';
 
 const Login = () => {
 	const dispatch = useDispatch();
@@ -36,14 +36,20 @@ const Login = () => {
 				<Input
 					name="email"
 					type="emaiil"
-					placeholder="Email"
-				/>
+					placeholder="Email">
+					Email
+				</Input>
 				<Input
 					name="password"
 					type="password"
-					placeholder="Password"
-				/>
-				<Submit type="button">Enviar</Submit>
+					placeholder="Password">
+					Password
+				</Input>
+				<Button
+					color="primary"
+					type="submit">
+					Enviar
+				</Button>
 			</FormStyled>
 		</Formik>
 	);

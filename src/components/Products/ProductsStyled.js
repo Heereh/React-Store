@@ -7,6 +7,7 @@ export const SectionProductsStyled = styled.section`
 	height: auto;
 	padding-top: 100px;
 	position: relative;
+
 	& h1 {
 		font-size: 2rem;
 		letter-spacing: 2px;

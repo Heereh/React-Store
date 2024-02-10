@@ -1,7 +1,6 @@
 import React from 'react';
 import { FormStyled } from '../Login/LoginStyled';
 
-import Submit from '../../components/UI/Submit/Submit';
 import Input from '../../components/UI/Input/Input';
 
 import { Formik } from 'formik';
@@ -13,6 +12,7 @@ import { useDispatch } from 'react-redux';
 import { setCurrentUser } from '../../redux/user/userslice';
 
 import useRedirect from '../../hooks/useRedirect';
+import { Button } from '@nextui-org/react';
 
 const Register = () => {
 	const dispatch = useDispatch();
@@ -42,22 +42,29 @@ const Register = () => {
 					<Input
 						name="name"
 						type="text"
-						placeholder="Nombre"
-					/>
+						placeholder="Nombre">
+						Nombre
+					</Input>
 					<Input
 						name="email"
 						type="text"
-						placeholder="Email"
-					/>
+						placeholder="Email">
+						Email
+					</Input>
 					<Input
 						name="password"
 						type="password"
-						placeholder="Password"
-					/>
+						placeholder="Password">
+						Password
+					</Input>
 					<a href="/login">
 						<p>Ya tienes cuenta? Inicia Sesión</p>
 					</a>
-					<Submit>Registrate</Submit>
+					<Button
+						color="primary"
+						type="submit">
+						Registrate
+					</Button>
 				</FormStyled>
 			</Formik>
 		</div>

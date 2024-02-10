@@ -8,6 +8,7 @@ export const HeroContainer = styled.section`
 	height: 600px;
 	position: relative;
 	cursor: pointer;
+	margin-bottom: 278px;
 `;
 
 export const HeroLeftStyled = styled.div`

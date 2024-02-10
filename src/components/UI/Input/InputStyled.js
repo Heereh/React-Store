@@ -12,6 +12,7 @@ export const InputLabelStyled = styled.label`
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 50%;
+	color: black;
 `;
 export const LoginInputStyled = styled.input`
 	width: 360px;
@@ -26,7 +27,7 @@ export const LoginInputStyled = styled.input`
 	::placeholder {
 		opacity: 80%;
 	}
-	-webkit-text-fill-color: white;
+	-webkit-text-fill-color: black;
 
 	:-webkit-autofill,
 	:-webkit-autofill:hover,

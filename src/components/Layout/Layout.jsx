@@ -7,8 +7,10 @@ const Layout = ({ children }) => {
 	return (
 		<LayoutContainerStyled>
 			<Header />
-			<LayoutWrapper>{children}</LayoutWrapper>
-			<Footer></Footer>
+			<LayoutWrapper>
+				{children}
+			</LayoutWrapper>
+				<Footer></Footer>
 		</LayoutContainerStyled>
 	);
 };
