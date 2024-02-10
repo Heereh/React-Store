@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { BASE_URL } from '../utils/devcontainer';
+
 
 export const createUser = async (nombre, email, password) => {
 	try {
-		const response = await axios.post(`${BASE_URL}auth/register`, {
+		const response = await axios.post(`${process.env.REACT_APP_BASE_URL}auth/register`, {
 			nombre,
 			email,
 			password,
@@ -17,10 +17,13 @@ export const createUser = async (nombre, email, password) => {
 
 export const loginUser = async (email, password) => {
 	try {
-		const response = await axios.post(`${BASE_URL}auth/login`, {
-			email,
-			password,
-		});
+		const response = await axios.post(
+			`${process.env.REACT_APP_BASE_URL}auth/login`,
+			{
+				email,
+				password,
+			},
+		);
 		return response.data;
 	} catch (error) {
 		console.log(error);

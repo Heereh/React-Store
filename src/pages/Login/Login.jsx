@@ -1,5 +1,5 @@
 import { FormStyled } from './LoginStyled';
-import LoginInput from '../../components/UI/Input/LoginInput';
+import Input from '../../components/UI/Input/Input';
 import Submit from '../../components/UI/Submit/Submit';
 
 import { Formik } from 'formik';
@@ -33,12 +33,12 @@ const Login = () => {
 			}}>
 			<FormStyled>
 				<h2>Iniciar Sesión</h2>
-				<LoginInput
+				<Input
 					name="email"
 					type="emaiil"
 					placeholder="Email"
 				/>
-				<LoginInput
+				<Input
 					name="password"
 					type="password"
 					placeholder="Password"

@@ -2,7 +2,7 @@ import React from 'react';
 import { FormStyled } from '../Login/LoginStyled';
 
 import Submit from '../../components/UI/Submit/Submit';
-import LoginInput from '../../components/UI/Input/LoginInput';
+import Input from '../../components/UI/Input/Input';
 
 import { Formik } from 'formik';
 import { registerInitialValues } from '../../formik/InitialValues';
@@ -39,17 +39,17 @@ const Register = () => {
 				}}>
 				<FormStyled>
 					<h2>Crea tu cuenta</h2>
-					<LoginInput
+					<Input
 						name="name"
 						type="text"
 						placeholder="Nombre"
 					/>
-					<LoginInput
+					<Input
 						name="email"
 						type="text"
 						placeholder="Email"
 					/>
-					<LoginInput
+					<Input
 						name="password"
 						type="password"
 						placeholder="Password"

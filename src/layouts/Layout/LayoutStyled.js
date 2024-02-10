@@ -5,7 +5,6 @@ export const LayoutWrapper = styled.main`
 	width: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding-bottom: 200px;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;

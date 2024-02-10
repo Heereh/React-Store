@@ -1,7 +1,8 @@
 export const checkoutIinitialValues = {
 	name: '',
 	cellphone: '',
-	email: '',
+	address: '',
+	location: '',
 };
 
 export const registerInitialValues = {

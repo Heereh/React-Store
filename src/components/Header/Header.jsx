@@ -20,12 +20,11 @@ import { IoCartOutline } from 'react-icons/io5';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCurrentUser } from '../../redux/user/userslice';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	const { currentUser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
-	
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -46,7 +45,11 @@ const Header = () => {
 					<NavLinkStyled
 						to="/"
 						title={true}>
-						<p title className="font-bold text-inherit">LOOKSTORE</p>
+						<p
+							title
+							className="font-bold text-inherit">
+							LOOKSTORE
+						</p>
 					</NavLinkStyled>
 
 					<NavbarMenu>
@@ -54,26 +57,28 @@ const Header = () => {
 							<LinkNextUi
 								color="primary"
 								className="w-full"
-								size="lg">
+								size="lg"
+								href="/">
 								Home
+							</LinkNextUi>
+						</NavbarMenuItem>
+						<NavbarMenuItem>
+							<LinkNextUi
+								color="second"
+								className="w-full"
+								href="/products"
+								size="lg">
+								Productos
 							</LinkNextUi>
 						</NavbarMenuItem>
 						<NavbarMenuItem>
 							<LinkNextUi
 								color="primary"
 								className="w-full"
-								size="lg">
-								Productos
-							</LinkNextUi>
-						</NavbarMenuItem>
-						<NavbarMenuItem>
-							<NavLinkStyled
-								color="primary"
-								className="w-full"
-								to="/contact"
+								href="/contact"
 								size="lg">
 								Contacto
-							</NavLinkStyled>
+							</LinkNextUi>
 						</NavbarMenuItem>
 					</NavbarMenu>
 				</NavbarBrand>

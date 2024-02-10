@@ -4,19 +4,22 @@ import {
 	ErrorMessageStyled,
 	InputContainerStyled,
 	LoginInputStyled,
+	InputLabelStyled,
 } from './InputStyled';
 
-const LoginInput = ({ type, placeholder, name }) => {
+const Input = ({ children, htmlFor, type, id, placeholder, name }) => {
 	return (
 		<Field name={name}>
 			{({ field, form: { errors, touched } }) => (
 				<InputContainerStyled>
+					<InputLabelStyled htmlFor={htmlFor}>{children}</InputLabelStyled>
+
 					<LoginInputStyled
 						type={type}
 						placeholder={placeholder}
+						id={id}
 						{...field}
 						iserror={errors[field.name] && touched[field.name]}
-						
 					/>
 
 					<ErrorMessage name={field.name}>
@@ -28,4 +31,4 @@ const LoginInput = ({ type, placeholder, name }) => {
 	);
 };
 
-export default LoginInput;
+export default Input;

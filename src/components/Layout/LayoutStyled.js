@@ -16,8 +16,6 @@ export const LayoutWrapper = styled.main`
 	width: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
-	margin-top: 50px;
-	padding-bottom: 400px;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;

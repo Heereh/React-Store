@@ -5,7 +5,14 @@ export const InputContainerStyled = styled.div`
 	flex-direction: column;
 	margin: 0 20px 0 20px;
 `;
-
+export const InputLabelStyled = styled.label`
+	display: flex;
+	margin: 1rem 0;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 50%;
+`;
 export const LoginInputStyled = styled.input`
 	width: 360px;
 	padding: 1.5rem 2rem;
