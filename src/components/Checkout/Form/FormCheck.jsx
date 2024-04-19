@@ -11,7 +11,7 @@ import { clearOrders } from '../../../redux/orders/orderSlice';
 import Loader from '../../UI/Loading/Loading';
 import { Button } from '@nextui-org/react';
 
-const FormCheck = ({  , ShippingCost, price }) => {
+const FormCheck = ({ cartItems, ShippingCost, price }) => {
 	const dispatch = useDispatch();
 	const { currentUser } = useSelector((state) => state.user);
 	const navigate = useNavigate();
