@@ -9,12 +9,12 @@ export const CardContainerStyled = styled.div`
 
 	max-width: 250px;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px 0px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 `;
 
 export const CardImageContainerStyled = styled.div`
 	height: 200px;
-	width: 200px;
+	width: 250px;
 	object-fit: cover;
 	& img {
 		width: 100%;
@@ -36,8 +36,10 @@ export const CardContentStyled = styled.div`
 	position: relative;
 
 	& h2 {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		font-weight: 300;
 		text-transform: uppercase;
+		width: 77%;
 		@media (max-width: 1150) {
 			font-size: 1px;
 		}
@@ -47,12 +49,14 @@ export const CardContentStyled = styled.div`
 export const Pruebas = styled.div`
 	width: 100%;
 	height: 82px;
+	display: flex;
+	justify-content: center;
 `;
 
 export const CardContainerBottom = styled.div`
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 10px 10px;
 	flex-direction: column;
 	bottom: 10px;
@@ -62,6 +66,7 @@ export const CardContainerBottom = styled.div`
 		line-height: 2.2rem;
 		padding-bottom: 10px;
 		color: green;
+		font-weight: 300;
 	}
 	& ul {
 		display: flex;

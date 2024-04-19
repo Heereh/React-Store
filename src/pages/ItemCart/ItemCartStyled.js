@@ -150,8 +150,7 @@ export const TotalContainerStyled = styled.div`
 	justify-content: center;
 	align-items: start;
 	width: 300px;
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	& h2 {
 		font-size: 1.5rem;
 		text-transform: uppercase;

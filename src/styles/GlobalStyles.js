@@ -2,17 +2,17 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyled = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Karla:wght@200;300;400&display=swap');
 
 :root{
   //Colors
-  --bg-main:#ebebeb;
+  --bg-main:#ededed;
   --gray-bg:#2b2b2c;
   --skyblue-txt: #7396ec;
   --font-primary:#fffffe;
 
 
-
-  --font-Josefin:'Josefin Sans', sans-serif;
+  --font-main: "Hind Madurai", sans-serif;
   --font-Karla:'Karla', sans-serif;
 }
 
@@ -49,6 +49,7 @@ export const GlobalStyled = createGlobalStyle`
 
 html{
   scroll-behavior: smooth;
+  font-family: var(--font-main);
 }
 
 body{
@@ -69,12 +70,11 @@ a:visited{
   text-decoration: white;
 }
  h1,h2,h3,h4,h5,h6{
-  font-family: var(--font-Josefin);
+  text-wrap:balance;
 } 
 
 
  p, ul,li{
-  font-family: var(--font-Karla);
 } 
 
 footer{

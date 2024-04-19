@@ -143,30 +143,11 @@ const Header = () => {
 									My Settings
 								</DropdownItem>
 								<DropdownItem
-									key="team_settings"
-									isDisabled>
-									Team Settings
+									to={Link}
+								>
+									Historial
 								</DropdownItem>
-								<DropdownItem
-									key="analytics"
-									isDisabled>
-									Analytics
-								</DropdownItem>
-								<DropdownItem
-									key="system"
-									isDisabled>
-									System
-								</DropdownItem>
-								<DropdownItem
-									key="configurations"
-									isDisabled>
-									Configurations
-								</DropdownItem>
-								<DropdownItem
-									key="help_and_feedback"
-									isDisabled>
-									Help & Feedback
-								</DropdownItem>
+								
 								<DropdownItem
 									key="logout"
 									color="danger"
