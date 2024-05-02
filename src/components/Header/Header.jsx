@@ -144,10 +144,10 @@ const Header = () => {
 								</DropdownItem>
 								<DropdownItem
 									to={Link}
-								>
-									Historial
+									href={`/Resumen`}>
+									Resumen
 								</DropdownItem>
-								
+
 								<DropdownItem
 									key="logout"
 									color="danger"

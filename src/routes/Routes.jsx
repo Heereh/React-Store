@@ -9,12 +9,14 @@ import Register from '../pages/Register/Register';
 import Contact from '../pages/Contact/Contact';
 import Product from '../pages/Product/Product';
 import UserProfiler from '../pages/User/UserProfiler';
+import Resumen from '../pages/Resumen/Resumen';
 
 const Checkout = lazy(() => import('../pages/Checkout/Checkout'));
 
 import ProtetedRoute from '../components/ProtetedRoute/ProtetedRoute';
 import ItemCart from '../pages/ItemCart/ItemCart';
 import Logrado from '../pages/Logrado/Logrado';
+import Compra from '../pages/Compra/Compra';
 
 const Routes = () => {
 	return (
@@ -29,10 +31,10 @@ const Routes = () => {
 					index
 					element={<Products />}
 				/>
-				<Route
+				{/* <Route
 					path=":product"
 					element={<Product />}
-				/>
+				/> */}
 			</Route>
 
 			<Route
@@ -80,6 +82,14 @@ const Routes = () => {
 						<Suspense>
 							<Logrado />
 						</Suspense>
+					</ProtetedRoute>
+				}
+			/>
+			<Route
+				path="/resumen/"
+				element={
+					<ProtetedRoute redirectTo={'/login'}>
+						<Resumen></Resumen>
 					</ProtetedRoute>
 				}
 			/>
