@@ -6,10 +6,6 @@ export const LayoutContainerStyled = styled.div`
 	width: 100%;
 	//max-width: 1200px;
 	margin: 0 auto;
-
-	& p {
-		text-align: center;
-	}
 `;
 export const LayoutWrapper = styled.main`
 	display: flex;
@@ -19,4 +15,5 @@ export const LayoutWrapper = styled.main`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-bottom: 350px;
 `;

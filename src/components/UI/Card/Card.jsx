@@ -51,8 +51,9 @@ const Card = ({ name, id, src, price }) => {
 				<CardContainerBottom>
 					<span>${price}</span>
 					<ul>
-						<LinkItem to={`/products/${name}`}>Ver más</LinkItem>
+						{/* <LinkItem to={`/products/${}`}>Ver más</LinkItem> */}
 						<Botton
+							radius={10}
 							onClick={() => {
 								dispatch(addToCart({ src, name, price, id }));
 							}}>

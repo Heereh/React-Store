@@ -7,6 +7,7 @@ export const FooterContainerStyled = styled.footer`
 	padding: 5rem 0 2rem 0;
 	width: 100%;
 	background-color: black;
+	position: absolute;
 `;
 
 export const LinksFooterContainerStyled = styled.div`

@@ -6,10 +6,12 @@ export const CardContainerStyled = styled.div`
 	align-items: center;
 	position: relative;
 	margin: 10px 0;
-
 	max-width: 250px;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
 `;
 
 export const CardImageContainerStyled = styled.div`

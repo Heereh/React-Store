@@ -6,7 +6,9 @@ export const GlobalStyled = createGlobalStyle`
 
 :root{
   //Colors
-  --bg-main:#ededed;
+  //--bg-main:#ededed;
+  --bg-main:#ffffff;
+  --wgray-bg:#d7d7d7;
   --gray-bg:#2b2b2c;
   --skyblue-txt: #7396ec;
   --font-primary:#fffffe;
@@ -29,7 +31,7 @@ export const GlobalStyled = createGlobalStyle`
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--skyblue-txt) #ededed;
+    scrollbar-color: var(--skyblue-txt) ;
   }
 
   /* Chrome, Edge, and Safari */
